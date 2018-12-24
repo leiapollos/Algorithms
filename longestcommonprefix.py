@@ -1,11 +1,11 @@
-def longestCommonPrefix(self, A):
+def longestCommonPrefix(A):
     pre=''
     b=A[0]
     for a in A:
-        b=self.check(b,a)
+        b=check(b,a)
     return b
 
-def check(self, b, a):
+def check(b, a):
     c=''
     for i in range(0,min(len(b),len(a))):
         if b[i] == a[i]:
